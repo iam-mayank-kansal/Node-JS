@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: fit-content;
+            margin: 30px auto;
+            border: 2px solid black;
+            padding: 20px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            height: 30px;
+            width: 250px;
+        }
+
+        button {
+            height: 35px;
+            width: 70px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://localhost:4000/backend" method="POST">
+        <input type="text" name="FirstName" placeholder="Enter Your First Name" class="name"><br>
+        <input type="text" name="LastName" placeholder="Enter Your Last Name" class="name"><br>
+        Gender
+        <div>
+            Male :<input type="radio" class="name" name="Gender" value="male"><br>
+            Female :<input type="radio" class="name" name="Gender" value="female"><br>
+            Other :<input type="radio" class="name" name="Gender" value="other"><br>
+        </div>
+        choose your career:
+        <div>
+            Web-dev<input type="checkbox" name="Career" value="web-dev" class="name">
+            App-dev<input type="checkbox" name="Career" value="app-dev" class="name">
+        </div>
+        <br>
+        Dream Company : <select name="Company" id="company">
+            <option value="microsoft">microsoft</option>
+            <option value="apple">apple</option>
+            <option value="infosis">infosis</option>
+        </select>
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
